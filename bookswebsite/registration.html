@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/loginpage.css" />
+    <title>Register</title>
+  </head>
+  <style>
+    button {
+      border-radius: 0px;
+      color: rgb(31, 199, 106);
+      background-color: rgb(60, 124, 197);
+      padding: 5px 10px 8px 10px;
+    }
+
+    /*Button hover state*/
+    button:hover {
+      animation-name: background-color;
+      animation-duration: 1000ms;
+    }
+
+    /*keyframes*/
+    @keyframes background-color {
+      100% {
+        background-color: rgb(31, 199, 106);
+      }
+    }
+
+    .wrapper {
+      text-align: center;
+    }
+    .wrapper ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      /* For IE, the outcast */
+      zoom: 1;
+      *display: inline;
+    }
+    .wrapper li {
+      float: left;
+      padding: 2px 5px;
+      border: 0px;
+    }
+
+    /* main */
+    header .header {
+      background-color: #fff;
+      height: 45px;
+    }
+    header a img {
+      width: 134px;
+      margin-top: 4px;
+    }
+    .login-page {
+      width: 360px;
+      padding: 8% 0 0;
+      margin: auto;
+    }
+    .login-page .form .login {
+      margin-top: -31px;
+      margin-bottom: 26px;
+    }
+    .form {
+      position: relative;
+      z-index: 1;
+      background: #1a7881;
+
+      max-width: 360px;
+      margin: 0 auto 100px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .form input {
+      font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: #ffffff;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .form button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background-color: rgb(60, 124, 197);
+      color: white;
+      border: 2px solid white;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #ffffff;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+
+    .form .message {
+      margin: 15px 0 0;
+      color: #0c0c0c;
+      font-size: 12px;
+    }
+    .form .message a {
+      color: #090909;
+      text-decoration: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    body {
+      background-image: url("banner1.jpg");
+      background-size: cover;
+    }
+    .button {
+      color: white;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="nav-right">
+        <div class="wrapper"></div>
+      </div>
+    </nav>
+
+    <div class="login-page">
+      <div class="form" action="register.php" method="post">
+        <div class="login">
+          <div class="login-header">
+            <h3>Sign in</h3>
+            <p>Please enter your details to Sign in.</p>
+          </div>
+        </div>
+
+        <form class="login-form" action="register.php" method="post">
+          <input type="text" name="fullname" placeholder="fullname" />
+          <input type="password" name="pass" placeholder="password" />
+          <input type="email" name="email" placeholder="email" />
+
+          <button name="save">
+            <a
+              href="loginpage.html"
+              class="button"
+              style="text-decoration: none"
+              name="save"
+              >OK</a
+            >
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

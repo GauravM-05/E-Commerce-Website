@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/loginpage.css">
+<link rel="stylesheet" href="style.css">
+<title> Login </title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+    
+    button {
+        border-radius: 0px;
+        color: rgb(31, 199, 31);;
+        background-color: rgb(60, 124, 197) ;
+        padding: 5px 10px 8px 10px;
+    }
+   
+    /*Button hover state*/
+    button:hover {
+        animation-name: background-color;
+        animation-duration: 1000ms;
+    }
+   
+    /*keyframes*/
+    @keyframes background-color {
+        100% {
+            background-color:rgb(31, 199, 106);
+        }
+    }
+
+    .wrapper {
+        text-align: center;
+    }
+    .wrapper ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .wrapper li {
+        float: left;
+        padding: 2px 5px;
+        border: 0px;
+    }
+
+
+</style>
+<body>
+  <img src="/banner1.jpg"
+	    <nav class="File">
+        
+      </nav>
+  
+      <div class="login-page">
+          <div class="form" action="login.php" method="post">
+            <div class="login">
+              <div class="login-header">
+                <h3>LOGIN</h3>
+              </div>
+            </div>
+  
+  
+            <form class="login-form" action="login.php" method="post">
+              <input type="text" name="username" placeholder="username"/>
+              <input type="password" name="pass" placeholder="password"/>
+              
+              <button name="save"><a href="index.html" class="button" style="text-decoration:none" name="save">Log In</a></button>
+              
+              <p class="message">Not registered? <a href="registration.html">Create an account</a></p>
+            </form>
+          </div>
+        </div>
+    
+</body>
+</html>

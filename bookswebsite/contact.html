@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+body{
+    background: linear-gradient(90deg,rgb(191, 223, 239)0%,rgb(191, 223, 239)30%,rgb(191, 223, 239)30%,rgb(191, 223, 239)100%);
+}
+
+.btn
+        {
+            display: block;
+            border-radius: 5px;
+            color:white;
+            background-color: #123669;
+            font-size:20px;
+            text-decoration: none;
+            width:fit-content;
+            height:fit-content;
+            padding:5px;
+        }
+        
+        .btn:hover{
+            background-color: #f8f8f8;
+        }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+    
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .title h2{
+    color: black;
+    font-weight: 500;
+}
+.box
+{
+    position: relative;
+}
+.form
+{
+    grid-area: form;
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.contact
+{
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+    position: relative;
+    display:flexbox;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3
+{
+    color: black;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formBox
+{
+    position: relative;
+    width: 100%;
+}
+.formbox .row50
+{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox
+{
+
+    width: 100%;
+}
+.inputBox span{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+}
+.inputBox textarea
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]
+{
+    background: #123669;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;                                              
+}
+.inputBox ::placeholder
+{
+    color: #999;
+}
+/* info */
+.info{
+    background: rgb(249, 249, 234);
+}
+.info h3
+{
+    color:black;
+}
+.info .infoBox div
+{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span
+{
+    min-width: 40px;
+    height: 40px;
+    color: black;
+    background:#1a7881;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p
+{
+    color: black;
+    font-size: 1.0em;
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a
+{
+    font-size: 2em;
+    color: #1a7881;
+}
+.sci li a:hover
+{
+    color: #123669;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <br>
+      
+       <left> <a href="index.html" class="btn">Back to Home<i class="fa fa-arrow-right" aria-hidden="true"></i> </a></left>
+       <p> click here </p>
+    </div>
+  <div class="contactUs">
+    <div class="title">
+        <h2>We are here to serve you!</h2>
+    </div>
+    <div class="box">
+        <div class="contact form">
+            <h3>Send a Message</h3>
+            <form action="contact.php" method="post">
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input type="text" name="firstname" placeholder="John">
+                        </div>
+                        <div class="inputBox">
+                            <span>Last Name</span>
+                            <input type="text" name="lastname" placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="Dev@gmail.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>Mobile</span>
+                            <input type="mobile" name="mobile" placeholder="+917208325602">
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Message</span>
+                            <textarea name="message" placeholder="Write your message here......"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input name="save" type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- info Box -->
+        <div class="contact info">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+                <div>
+                    <span><ion-icon name="location"></ion-icon></span>
+                    <p>B-105 Ganesh Arcade HOS <br> Old Panvel,<br>Navi Mumbai-410206,IN</p>
+                </div>
+                <div>
+                    <span><ion-icon name="mail"></ion-icon>
+                    </span>
+                    <a href="mailto:bookstores9975@gmail.com">bookstores9975@gmail.com</a>
+                </div>
+                <div>
+                    <span><ion-icon name="call"></ion-icon></span>
+                <a href="tel:+9198742510">+9198742510</a>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://in.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li>><a href="https://in.pinterest.com/"><ion-icon name="fa fa-pinterest-p"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- map -->
+        
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

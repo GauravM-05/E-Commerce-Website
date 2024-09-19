@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Book Mania </a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#featured">featured</a>
+          <a href="#about">about</a>
+          <a href="#reviews">reviews</a>
+          <a href="contact.html">contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featured" class="fas fa-list"></a>
+      <a href="#about" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <div class="login-page">
+        <div class="form" action="login.php" method="post">
+          <div class="login">
+            <div class="login-header">
+              <h3>LOGIN</h3>
+            </div>
+          </div>
+
+          <form class="login-form" action="login.php" method="post">
+            <input type="text" name="username" placeholder="username" />
+            <input type="password" name="pass" placeholder="password" />
+
+            <button name="save">
+              <a
+                href="index.html"
+                class="button"
+                style="text-decoration: none"
+                name="save"
+                >Log In</a
+              >
+            </button>
+
+            <p class="message">
+              Not registered? <a href="registration.html">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Welcome to Book Mania</h3>
+
+          <p>You can find out your books here.</p>
+
+          <a href="Products.html" class="btn">Shop Now</a>
+        </div>
+
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="book-1.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="book-2.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="book3.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="book4.webp" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="book5.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="book6.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>featured books</span></h1>
+
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="book-6.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons"></div>
+            <div class="image">
+              <img src="book2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons"></div>
+            <div class="image">
+              <img src="book3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons"></div>
+            <div class="image">
+              <img src="book4.webp" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="book6.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="c-2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="Ruskin Bond.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="t1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="t4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="book-2.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="price">₹200 <span>₹350</span></div>
+              <a href="#" class="btn">add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="content">
+        <h1>About Us</h1>
+        <p>
+          We offer a tremendous gathering of books in the various
+          classifications of Fiction, Non-fiction, Biographies, History,
+          Religions, Self-Help, Children. We likewise move in immense
+          accumulation of Investments and Management, Computers, Engineering,
+          Medical, College and School content references books proposed by
+          various foundations as schedule the nation over. Other than this, we
+          likewise offer an expansive gathering of E-Books at reasonable
+          valuing.
+        </p>
+        <a href="aboutus.html" class="btn">Read more</a>
+      </div>
+
+      <div class="image">
+        <img src="aboutus1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span> reviews</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="gaurav.jpeg" alt="" />
+            <h3>Gaurav</h3>
+            <p>"Here’s to books, the cheapest vacation you can buy"</p>
+            <p>gaurav45@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="shruti.jpeg" alt="" />
+            <h3>Shruti</h3>
+            <p>"Books are uniquely portable magic."</p>
+            <p>shruti987@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="preety.jpeg" alt="" />
+            <h3>Preity</h3>
+            <p>"I enjoy long, romantic walks through the library"</p>
+            <p>preitypatil02@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="urvi.jpeg" alt="" />
+            <h3>Urvashi</h3>
+            <p>"Sleep is good… And books are better"</p>
+            <p>urvashi07@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="rageshwari.jpeg" alt="" />
+            <h3>Rageshwari</h3>
+            <p>"A library is full of new worlds to travel to."</p>    
+            <p>Rageshwari56@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="siddh.jpeg" alt="" />
+            <h3>Siddhesh</h3>
+            <p> "Between the pages of a book is a lovely place to be"</p>
+               <p>siddheshphadtare06@gmail.com</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutus.html">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="Products.html">products</a></li>
+              <li><a href="contact.html">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="Kids index.html">Kids Section</a></li>
+              <li><a href="teenagers index.html">Teenagers Choice</a></li>
+              <li><a href="Older adults index.html">Adults Choice</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://in.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copy">Copyright@ All Rights Reserved by Book Mania</div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+  </body>
+</html>
